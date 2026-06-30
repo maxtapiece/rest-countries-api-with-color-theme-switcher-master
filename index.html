@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font: Nunito Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>REST Countries API</title>
+  </head>
+
+  <body>
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="site-header">
+      <div class="header-inner">
+        <h1 class="page-title">Where in the world?</h1>
+
+        <button
+          type="button"
+          class="theme-toggle"
+          aria-label="Toggle dark mode"
+        >
+          <i class="fa-regular fa-moon theme-icon"></i>
+          <span>Dark Mode</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- =========================
+           SEARCH AND FILTER
+      ========================== -->
+      <section class="search-filter" aria-label="Search and filter countries">
+        <label for="country-search" class="sr-only">
+          Search for a country
+        </label>
+
+        <input
+          type="search"
+          id="country-search"
+          class="search-input"
+          placeholder="Search for a country..."
+        />
+
+        <label for="region-filter" class="sr-only"> Filter by region </label>
+
+        <select id="region-filter" class="region-filter">
+          <option value="">Filter by Region</option>
+          <option value="Africa">Africa</option>
+          <option value="Americas">America</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </section>
+
+      <!-- =========================
+           COUNTRIES GRID
+      ========================== -->
+      <section class="countries-section" aria-label="Countries list">
+        <div class="countries-grid" id="countries-grid">
+          <!-- Country cards will be rendered here with JavaScript -->
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

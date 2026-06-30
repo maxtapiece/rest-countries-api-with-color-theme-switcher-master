@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font: Nunito Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Country Details | REST Countries API</title>
+  </head>
+
+  <body>
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="site-header">
+      <div class="header-inner">
+        <h1 class="page-title">Where in the world?</h1>
+
+        <button type="button" class="theme-toggle">Dark Mode</button>
+      </div>
+    </header>
+
+    <main class="main-content detail-page">
+      <!-- Back button -->
+      <button class="back-btn">← Back</button>
+
+      <!-- Country details will be rendered here with JavaScript -->
+      <section class="country-detail" id="country-detail">
+        <!-- JS will inject country detail content -->
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
